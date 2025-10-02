@@ -18,7 +18,7 @@ int main(){
 
     printf("%i", i);
 
-    for(int j = pyramidWidth / 2; j > 0; j--){
+    for(int j = pyramidWidth / 2 - 1; j >= 0; j--){
       if(j < spaceCounts) {
         printf(" ");
       } else {
