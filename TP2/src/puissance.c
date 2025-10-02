@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int pow(int a, inb b){
+int power(int a, inb b){
   int result = 1;
 
   for(int i = 0; i < b; i++){
@@ -11,11 +11,11 @@ int pow(int a, inb b){
 }
 
 int main(){
-  printf("Test 1 : %d", pow(2, 3));
-  printf("Test 2 : %d", pow(2, -3));
-  printf("Test 3 : %d", pow(2, 0));
-  printf("Test 4 : %d", pow(-2, 3));
-  printf("Test 5 : %d", pow(-2, -3));
+  printf("Test 1 : %d", power(2, 3));
+  printf("Test 2 : %d", power(2, -3));
+  printf("Test 3 : %d", power(2, 0));
+  printf("Test 4 : %d", power(-2, 3));
+  printf("Test 5 : %d", power(-2, -3));
   
   return 0;
 }
