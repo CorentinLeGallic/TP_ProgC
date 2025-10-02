@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int testBits(number){
+int testBits(int number){
   int bit4 = (number >> 4) & 1;
   int bit20 = (number >> 20) & 1;
 
@@ -16,4 +16,5 @@ int main(){
   
   return 0;
 }
+
 
