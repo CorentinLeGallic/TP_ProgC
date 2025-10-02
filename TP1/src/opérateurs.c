@@ -7,9 +7,10 @@ int main() {
   printf("16 + 3 = %d\n", a + b);
   printf("3 - 16 = %d\n", b - a);
   printf("16 * 3 = %d\n", a * b);
-  printf("16 % 3 = %d\n", a % b);
+  printf("16 \% 3 = %d\n", a % b);
   printf("16 == 3 = %d\n", a == b);
   printf("16 > 3 = %d\n", a > b);
 
   return 0;
 }
+
