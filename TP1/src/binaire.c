@@ -16,7 +16,7 @@ char* getBinaryForm(int number) {
     i++;
   }
 
-  char result[i];
+  static char result[i];
 
   for(int j = 0; j < i; j++){
     result[j] = invertedResult[INT_SIZE - i - j - 1];
@@ -34,5 +34,6 @@ int main(){
   
   return 0;
 }
+
 
 
