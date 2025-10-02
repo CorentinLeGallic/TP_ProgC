@@ -5,7 +5,7 @@
 char* getBinaryForm(int number) {
   if(number == 0) return "0";
 
-  char[INT_SIZE] invertedResult; // Int size : 16 bits
+  char invertedResult[INT_SIZE]; // Int size : 16 bits
 
   int i = 0;
   int n = number;
@@ -16,7 +16,7 @@ char* getBinaryForm(int number) {
     i++;
   }
 
-  char[i] result;
+  char result[i];
 
   for(int j = 0; j < i; j++){
     result[j] = invertedResult[INT_SIZE - i - j - 1];
@@ -34,4 +34,5 @@ int main(){
   
   return 0;
 }
+
 
