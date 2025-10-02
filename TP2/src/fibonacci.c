@@ -3,11 +3,11 @@
 void printFibonacci(int n){
   if(n < 0) return;
   
-  printf("Terme N°1 : %d", 0);
+  printf("Terme N°1 : %d\n", 0);
   
   if(n == 0) return;
     
-  printf("Terme N°2 : %d", 1);
+  printf("Terme N°2 : %d\n", 1);
   
   if(n == 1) return;
 
@@ -20,7 +20,7 @@ void printFibonacci(int n){
     penultimateValue = lastValue;
     lastValue = newValue;
 
-    printf("Terme N°%d : %d", i, lastValue);
+    printf("Terme N°%d : %d\n", i, lastValue);
   }
 }
 
@@ -34,5 +34,6 @@ int main(){
   
   return 0;
 }
+
 
 
