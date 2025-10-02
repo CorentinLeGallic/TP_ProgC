@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int compute(int num1, int num2, char* op){
-  switch(op){
+  switch(op[0]){
     case '+':
       return num1 + num2;
     case '-':
@@ -104,5 +104,6 @@ int main() {
   
   return 0;
 }
+
 
 
