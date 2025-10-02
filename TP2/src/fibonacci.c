@@ -4,7 +4,7 @@ void printFibonacci(int n){
   if(n < 0) return;
   
   if(n <= 1) {
-    printf("%d", n);
+    printf("Résultat : %d", n);
     return;
   }
 
@@ -18,16 +18,17 @@ void printFibonacci(int n){
     lastValue = newValue;
   }
 
-  printf("%d", lastValue);
+  printf("Résultat : %d", lastValue);
 }
 
 int main(){
   int n;
 
-  printf("Nombre de termes : ");
+  printf("Nombre de termes : \n");
   scanf("%d", &n);
 
   printFibonacci(n);
   
   return 0;
 }
+
