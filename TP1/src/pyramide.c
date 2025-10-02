@@ -25,6 +25,8 @@ int main(){
         printf("%i", j - spaceCounts + 1);
       }
     }
+
+    printf("\n");
   }
   
   return 0;
