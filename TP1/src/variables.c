@@ -20,25 +20,26 @@ int main() {
   double doubleValue = 3.141592653589793;
   long double longDoubleValue = 3.14159265358979323846;
 
-  printf("Signed Char Value : %c", signedCharValue);
-  printf("Unsigned Char Value : %c", unsignedCharValue);
+  printf("Signed Char Value : %c\n", signedCharValue);
+  printf("Unsigned Char Value : %c\n\n", unsignedCharValue);
 
-  printf("Signed Short Value : %hi", signedShortValue);
-  printf("Unsigned Short Value : %hu", unsignedShortValue);
+  printf("Signed Short Value : %hi\n", signedShortValue);
+  printf("Unsigned Short Value : %hu\n\n", unsignedShortValue);
 
-  printf("Signed Int Value : %i", signedIntValue);
-  printf("Unsigned Int Value : %u", unsignedIntValue);
+  printf("Signed Int Value : %i\n", signedIntValue);
+  printf("Unsigned Int Value : %u\n\n", unsignedIntValue);
 
-  printf("Signed Long Int Value : %li", signedLongIntValue);
-  printf("Unsigned Long Int Value : %lu", unsignedLongIntValue);
+  printf("Signed Long Int Value : %li\n", signedLongIntValue);
+  printf("Unsigned Long Int Value : %lu\n\n", unsignedLongIntValue);
 
-  printf("Signed Long Long Int Value : %lli", signedLongLongIntValue);
-  printf("Unsigned Long Long Int Value : %llu", unsignedLongLongIntValue);
+  printf("Signed Long Long Int Value : %lli\n", signedLongLongIntValue);
+  printf("Unsigned Long Long Int Value : %llu\n\n", unsignedLongLongIntValue);
 
-  printf("Float Value : %f", floatValue);
-  printf("Double Value : %lf", doubleValue);
-  printf("Long Double Value : %LG", longDoubleValue);
+  printf("Float Value : %f\n", floatValue);
+  printf("Double Value : %lf\n", doubleValue);
+  printf("Long Double Value : %LG\n", longDoubleValue);
   
   return 0;
 }
+
 
