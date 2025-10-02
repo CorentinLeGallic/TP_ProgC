@@ -26,14 +26,15 @@ void printBinaryForm(int number) {
 }
 
 int main(){
-  getBinaryForm(0);
-  getBinaryForm(4096);
-  getBinaryForm(65536);
-  getBinaryForm(65535);
-  getBinaryForm(1024);
+  printBinaryForm(0);
+  printBinaryForm(4096);
+  printBinaryForm(65536);
+  printBinaryForm(65535);
+  printBinaryForm(1024);
   
   return 0;
 }
+
 
 
 
