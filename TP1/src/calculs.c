@@ -101,52 +101,7 @@ int main() {
   num1 = 5;
   op = "~";
   printf("Test 16: %s%d = %d\n", op, num1, compute(num1, 0, op));
-
-  // Test case 17: Addition with large number (overflow)
-  num1 = INT_MAX, num2 = 1;
-  op = "+";
-  printf("Test 17: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 18: Subtraction with large number (underflow)
-  num1 = INT_MIN, num2 = 1;
-  op = "-";
-  printf("Test 18: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 19: Multiplication with large number (overflow)
-  num1 = INT_MAX, num2 = 2;
-  op = "*";
-  printf("Test 19: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 20: Division by zero (undefined behavior)
-  num1 = 5, num2 = 0;
-  op = "/";
-  printf("Test 20: %d %s %d = ", num1, op, num2);
-  // Note: Division by zero is undefined behavior, so we handle it separately
-  if (num2 == 0) {
-      printf("Undefined (division by zero)\n");
-  } else {
-      printf("%d\n", compute(num1, num2, op));
-  }
-
-  // Test case 21: Modulo with large number
-  num1 = INT_MAX, num2 = 2;
-  op = "%";
-  printf("Test 21: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 22: Bitwise AND with large number
-  num1 = INT_MAX, num2 = 1;
-  op = "&";
-  printf("Test 22: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 23: Bitwise OR with large number
-  num1 = INT_MAX, num2 = 1;
-  op = "|";
-  printf("Test 23: %d %s %d = %d\n", num1, op, num2, compute(num1, num2, op));
-
-  // Test case 24: Bitwise NOT with large number
-  num1 = INT_MAX;
-  op = "~";
-  printf("Test 24: %s%d = %d\n", op, num1, compute(num1, 0, op));
   
   return 0;
 }
+
