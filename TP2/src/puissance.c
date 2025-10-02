@@ -11,11 +11,12 @@ int power(int a, int b){
 }
 
 int main(){
-  printf("Test 1 : %d", power(2, 3));
-  printf("Test 2 : %d", power(2, -3));
-  printf("Test 3 : %d", power(2, 0));
-  printf("Test 4 : %d", power(-2, 3));
-  printf("Test 5 : %d", power(-2, -3));
+  printf("Test 2 & 3 : %d\n", power(2, 3));
+  printf("Test 2 & -3 : %d\n", power(2, -3));
+  printf("Test 2 & 0 : %d\n", power(2, 0));
+  printf("Test -2 & 3 : %d\n", power(-2, 3));
+  printf("Test -2 & -3 : %d\n", power(-2, -3));
   
   return 0;
 }
+
