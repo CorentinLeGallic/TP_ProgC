@@ -25,6 +25,7 @@ int main() {
 
     while(j < i){
       printf(i == compteur - 1 || j == 0 || j == i - 1 ? "*" : "#");
+      j++;
     }
 
     printf("\n");
@@ -33,3 +34,4 @@ int main() {
   
   return 0;
 }
+
