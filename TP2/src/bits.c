@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-int testBits(n){
-  int bit4 = (d >> 4) & 1;
-  int bit20 = (d >> 20) & 1;
+int testBits(number){
+  int bit4 = (number >> 4) & 1;
+  int bit20 = (number >> 20) & 1;
 
   return bit4 && bit20;
 }
 
 int main(){
-  int d = 183;
-
   printf("1048592 : %d\n", testBits(1048592));
   printf("116 : %d\n", testBits(116));
   printf("11048576 : %d\n", testBits(11048576));
@@ -18,3 +16,4 @@ int main(){
   
   return 0;
 }
+
