@@ -13,8 +13,8 @@ int main() {
   signed long int signedLongIntValue = -1000000000;
   unsigned long int unsignedLongIntValue = 4000000000;
   
-  signed long long int signedLongLongIntValue = -9000000000000000000;
-  unsigned long long int unsignedLongLongIntValue = 18000000000000000000;
+  signed long long int signedLongLongIntValue = -90000000000000;
+  unsigned long long int unsignedLongLongIntValue = 180000000000000;
   
   float floatValue = 3.14159;
   double doubleValue = 3.141592653589793;
@@ -41,3 +41,4 @@ int main() {
   
   return 0;
 }
+
