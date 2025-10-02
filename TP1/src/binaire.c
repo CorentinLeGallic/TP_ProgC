@@ -3,7 +3,10 @@
 #define INT_SIZE 16
 
 void printBinaryForm(int number) {
-  if(number == 0) return "0";
+  if(number == 0) {
+    printf("0");
+    return;
+  }
 
   char invertedResult[INT_SIZE]; // Int size : 16 bits
 
@@ -32,6 +35,7 @@ int main(){
   
   return 0;
 }
+
 
 
 
