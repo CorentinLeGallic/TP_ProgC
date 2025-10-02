@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main {
+int main() {
   float rayon = 10;
 
   float aire = M_PI * (rayon ** 2);
@@ -11,3 +11,4 @@ int main {
   
   return 0;
 }
+
