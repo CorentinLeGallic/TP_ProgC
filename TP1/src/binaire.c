@@ -21,8 +21,6 @@ void printBinaryForm(int number) {
   for(int j = 0; j < i; j++){
     printf("%d", invertedResult[INT_SIZE - i - j - 1]);
   }
-
-  return result;
 }
 
 int main(){
@@ -34,6 +32,7 @@ int main(){
   
   return 0;
 }
+
 
 
 
