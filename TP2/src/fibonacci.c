@@ -3,22 +3,25 @@
 void printFibonacci(int n){
   if(n < 0) return;
   
-  if(n <= 1) {
-    printf("Résultat : %d", n);
-    return;
-  }
+  printf("Terme N°1 : %d", 0);
+  
+  if(n == 0) return;
+    
+  printf("Terme N°2 : %d", 1);
+  
+  if(n == 1) return;
 
   int penultimateValue = 0;
   int lastValue = 1;
 
-  for(int i = 2; i <= n; i++){
+  for(int i = 3; i <= n; i++){
     int newValue = penultimateValue + lastValue;
     
     penultimateValue = lastValue;
     lastValue = newValue;
-  }
 
-  printf("Résultat : %d", lastValue);
+    printf("Terme N°%d : %d", i, lastValue);
+  }
 }
 
 int main(){
@@ -31,4 +34,5 @@ int main(){
   
   return 0;
 }
+
 
