@@ -2,10 +2,10 @@
 
 #define INT_SIZE 16
 
-char[] getBinaryForm(int number) {
+char* getBinaryForm(int number) {
   if(number == 0) return "0";
 
-  char[INT_SIZE] invertedResult = []; // Int size : 16 bits
+  char[INT_SIZE] invertedResult; // Int size : 16 bits
 
   int i = 0;
   int n = number;
@@ -16,7 +16,7 @@ char[] getBinaryForm(int number) {
     i++;
   }
 
-  char[i] result = [];
+  char[i] result;
 
   for(int j = 0; j < i; j++){
     result[j] = invertedResult[INT_SIZE - i - j - 1];
@@ -34,3 +34,4 @@ int main(){
   
   return 0;
 }
+
