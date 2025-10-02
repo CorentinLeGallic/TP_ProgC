@@ -3,7 +3,7 @@
 int power(int a, int b){
   int result = 1;
 
-  for(int i = 0; i < b; i++){
+  for(int i = 0; i < (b < 0 ? -b : b); i++){
     result *= a;
   }
 
@@ -19,4 +19,5 @@ int main(){
   
   return 0;
 }
+
 
