@@ -2,7 +2,7 @@
 
 #define INT_SIZE 16
 
-char* getBinaryForm(int number) {
+void printBinaryForm(int number) {
   if(number == 0) return "0";
 
   char invertedResult[INT_SIZE]; // Int size : 16 bits
@@ -16,24 +16,25 @@ char* getBinaryForm(int number) {
     i++;
   }
 
-  static char result[i];
+  printf("Binary form of %d : ", number);
 
   for(int j = 0; j < i; j++){
-    result[j] = invertedResult[INT_SIZE - i - j - 1];
+    printf("%d", invertedResult[INT_SIZE - i - j - 1]);
   }
 
   return result;
 }
 
 int main(){
-  printf("Binary form of 0 : %s", getBinaryForm(0));
-  printf("Binary form of 4096 : %s", getBinaryForm(4096));
-  printf("Binary form of 65536 : %s", getBinaryForm(65536));
-  printf("Binary form of 65535 : %s", getBinaryForm(65535));
-  printf("Binary form of 1024 : %s", getBinaryForm(1024));
+  getBinaryForm(0);
+  getBinaryForm(4096);
+  getBinaryForm(65536);
+  getBinaryForm(65535);
+  getBinaryForm(1024);
   
   return 0;
 }
+
 
 
 
