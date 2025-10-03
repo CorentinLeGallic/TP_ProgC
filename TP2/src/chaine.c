@@ -46,7 +46,7 @@ int main(){
   char test1[100] = "Hello, ";
   char test2[100] = "World !";
 
-  char concatedString[] = "";
+  char concatedString[200];
 
   printf("Concat string : %s\n", concatStrings(test1, test2, concatedString));
 
@@ -56,6 +56,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
