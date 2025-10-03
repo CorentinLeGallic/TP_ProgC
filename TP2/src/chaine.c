@@ -19,7 +19,7 @@ void copyString(char* string1, char* string2){
 }
 
 
-*char concatStrings(char* string1, char* string2){
+char* concatStrings(char* string1, char* string2){
   char result[] = string1;
 
   int i = 0;
@@ -50,4 +50,5 @@ int main(){
 
   return 0;
 }
+
 
