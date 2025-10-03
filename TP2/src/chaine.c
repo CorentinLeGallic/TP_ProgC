@@ -43,7 +43,7 @@ int main(){
   printf("String length : %d\n", getStringLength("Coucou"));
 
   char test1[100] = "Hello, ";
-  char test2[100] = "Me !";
+  char test2[100] = "Everyone !";
   
   char concatedString[200] = "";
 
@@ -57,6 +57,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
