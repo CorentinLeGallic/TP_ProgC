@@ -44,11 +44,11 @@ int main(){
   char test1[100] = "Hello, ";
   char test2[100] = "World !";
   
-  char result[200] = "";
+  char concatedString[200] = "";
 
-  concatStrings(test1, test2, concatedString, result);
+  concatStrings(test1, test2, concatedString);
   
-  printf("Concat string : %s\n", result);
+  printf("Concat string : %s\n", concatedString);
 
   copyString(test1, test2);
 
@@ -56,6 +56,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
