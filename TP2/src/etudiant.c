@@ -17,9 +17,10 @@ int main() {
     float gradesOS[STUDENTS_COUNT] = { 10.0, 19.5, 17, 18.5, 4.5 };
 
     for(int i = 0; i < STUDENTS_COUNT; i++){
-        printf("%s %s - %s - %f & %f\n", names[i], surnames[i], adresses[i], gradesC[i], gradesOS[i]);
+        printf("%s %s - %s - %f & %2f\n", names[i], surnames[i], adresses[i], gradesC[i], gradesOS[i]);
     }
 
     return 0;
 }
+
 
