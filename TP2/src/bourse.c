@@ -9,7 +9,7 @@ int main(){
 
   for(int i = 0; i < DAYS_COUNT; i++){
     for(int j = 0; j < DAYS_COUNT - i; j++){
-      if(goldValues[i] - goldValues[i + j] > maximumLoss) maximumLoss = goldValues[i] - goldValues[j];
+      if(goldValues[i] - goldValues[i + j] > maximumLoss) maximumLoss = goldValues[i] - goldValues[i + j];
     }
   }
 
