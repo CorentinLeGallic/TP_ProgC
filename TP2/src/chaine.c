@@ -46,7 +46,7 @@ int main(){
   
   char result[200] = "";
 
-  concatStrings(test1, test2, concatedString, result)
+  concatStrings(test1, test2, concatedString, result);
   
   printf("Concat string : %s\n", result);
 
@@ -56,6 +56,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
