@@ -15,6 +15,7 @@ void copyString(char* string1, char* string2){
   while(*string1 != '\0'){
     *string2 = *string1;
     string1++;
+    string2++;
   }
 }
 
@@ -56,6 +57,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
