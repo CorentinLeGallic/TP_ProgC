@@ -1,31 +1,25 @@
 #include <stdio.h>
 
+#define STUDENTS_COUNT 5
+
 int main() {
-    char noms[5][50] = {"Dupont", "Martin", "Bernard", "Dubois", "Lambert"};
-    char prenoms[5][50] = {"Alice", "Pierre", "Sophie", "Lucas", "Emma"};
-    char adresses[5][100] = {
-        "12 rue de Paris, 75001 Paris",
-        "45 avenue Victor Hugo, 69002 Lyon",
-        "8 boulevard Gambetta, 31000 Toulouse",
-        "23 rue Carnot, 33000 Bordeaux",
-        "56 place de la Liberte, 59000 Lille"
+    char names[STUDENTS_COUNT][50] = { "Tom", "Taïlan", "Jean", "Dan", "Marie" };
+    char surnames[STUDENTS_COUNT][50] = { "Dupuy", "Pierre", "Dupond", "Martin", "Poirier" };
+    char adresses[STUDENTS_COUNT][100] = {
+        "14 rue du Bourg Nouveau",
+        "3 rue de la Madeleine",
+        "10 rue Saint-Michel",
+        "27bis avenue des Lilas",
+        "7 boulevard du Canal"
     };
-    float notes_prog[5] = {15.5, 12.0, 18.0, 14.5, 16.0};
-    float notes_sys[5] = {14.0, 13.5, 17.0, 15.0, 15.5};
-    
-    int i = 0;
-    
-    printf("=== Liste des Etudiants ===\n\n");
-    
-    for (i = 0; i < 5; i++) {
-        printf("Etudiant %d:\n", i + 1);
-        printf("Nom: %s\n", noms[i]);
-        printf("Prenom: %s\n", prenoms[i]);
-        printf("Adresse: %s\n", adresses[i]);
-        printf("Note Programmation en C: %.2f\n", notes_prog[i]);
-        printf("Note Systeme d'exploitation: %.2f\n", notes_sys[i]);
-        printf("\n");
+
+    float gradesC[STUDENTS_COUNT] = { 19.5, 10.0, 4.5, 17.0, 18.5 };
+    float gradesOS[STUDENTS_COUNT] = { 10.0, 19.5, 17, 18.5, 4.5 };
+
+    for(int i = 0; i < STUDENTS_COUNT; i++){
+        printf("%s %s - %s - %f & %f\n", names[i], surnames[i], adresses[i], gradesC[i], gradesOS[i]);
     }
-    
+
     return 0;
 }
+
