@@ -20,17 +20,23 @@ void copyString(char* string1, char* string2){
 
 
 char* concatStrings(char* string1, char* string2){
-  char result[] = string1;
+  char result[] = "";
 
-  int i = 0;
-  
-  while(*string2 != '\0'){
-    string1[getStringLength(string1) + i] = *string2;
-    i++;
+  int string1Length = getStringLength(string1);
+  int string2Length = getStringLength(string2);
+
+  for(int i = 0; i < string1Length; i++){
+    result[i] = *string1;
+    string1++;
+  }
+
+
+  for(int i = 0; i < string2Length; i++){
+    result[i] = *string2;
     string2++;
   }
 
-  result[getStringLength(string1) + getStringLength(string2)] = '\0';
+  result[string1Length + string2Length] = '\0';
 
   return result;
 }
@@ -50,5 +56,6 @@ int main(){
 
   return 0;
 }
+
 
 
