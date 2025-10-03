@@ -30,7 +30,7 @@ void concatStrings(char* string1, char* string2, char* result){
 
 
   for(int i = 0; i < string2Length; i++){
-    result[i] = *string2;
+    result[string1Length + i] = *string2;
     string2++;
   }
 
@@ -56,6 +56,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
