@@ -19,9 +19,7 @@ void copyString(char* string1, char* string2){
 }
 
 
-char* concatStrings(char* string1, char* string2){
-  char result[] = "";
-  
+void concatStrings(char* string1, char* string2, char* result){  
   int string1Length = getStringLength(string1);
   int string2Length = getStringLength(string2);
 
@@ -37,8 +35,6 @@ char* concatStrings(char* string1, char* string2){
   }
 
   result[string1Length + string2Length] = '\0';
-
-  return result;
 }
 
 int main(){
@@ -47,8 +43,12 @@ int main(){
 
   char test1[100] = "Hello, ";
   char test2[100] = "World !";
+  
+  char result[200] = "";
 
-  printf("Concat string : %s\n", concatStrings(test1, test2, concatedString));
+  concatStrings(test1, test2, concatedString, result)
+  
+  printf("Concat string : %s\n", result);
 
   copyString(test1, test2);
 
